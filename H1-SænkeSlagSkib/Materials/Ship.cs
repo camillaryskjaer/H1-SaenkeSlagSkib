@@ -19,9 +19,10 @@ namespace H1_SænkeSlagSkib.Materials
             PatruljeBåd
         }
 
-        protected internal ShipEnum ship;
-        protected internal int length;
+        private readonly ShipEnum ship;
+        private int length;
         private int health;
+
 
         public int Health   
         {
@@ -29,6 +30,17 @@ namespace H1_SænkeSlagSkib.Materials
             protected internal set { health = value; }
         }
 
+        public int Length
+        {
+            get { return length; }
+            set { length = value; }
+        }
+
+        /// <summary>
+        /// Constructor for ships, not abstract, cause this is the one i use for all my ships, cause i saw no reason to have 5 empty constructors for the different type of ships, cause nothing new would be added, so i define the ship with an enum
+        /// </summary>
+        /// <param name="ship"></param>
+        /// <param name="length"></param>
         public Ship(ShipEnum ship, int length):base("Ship","Hit!!")
         {
             this.ship = ship;
@@ -38,7 +50,7 @@ namespace H1_SænkeSlagSkib.Materials
         }
         protected internal void HitHealth()
         {
-            Health -= 1;
+            health -= 1;
         }
     }
 }

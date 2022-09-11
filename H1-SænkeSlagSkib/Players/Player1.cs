@@ -23,11 +23,13 @@ namespace H1_SænkeSlagSkib.Players
             get { return hitBoard; }
             protected internal set { hitBoard = value; }
         }
-
+        /// <summary>
+        /// Constructor for player 2, to use the instances of the 2 boards
+        /// </summary>
         public Player1():base()
         {
-            this.board = BoardPlayer1.Instance;
-            this.hitBoard = HitBoardPlayer1.Instance;
+            this.board = BoardP1.Instance;
+            this.hitBoard = HitBoardP1.Instance;
             
         }
         protected internal void StartGame()

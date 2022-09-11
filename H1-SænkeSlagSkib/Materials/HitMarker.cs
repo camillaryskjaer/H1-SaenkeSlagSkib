@@ -8,6 +8,7 @@ namespace H1_SænkeSlagSkib.Materials
 {
     internal class HitMarker : Material
     {
+
         public HitMarker():base("HitMarker","Already shot here")
         {
 

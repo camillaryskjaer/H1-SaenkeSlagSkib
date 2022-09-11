@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace H1_SænkeSlagSkib.Players
 {
-    internal class AI : Player
+    internal class Player2 : Player
     {
 
         protected internal Board board;
@@ -25,14 +25,14 @@ namespace H1_SænkeSlagSkib.Players
             get { return board; }
             set { board = value; }
         }
-        public AI():base() 
+        /// <summary>
+        /// Constructor for my player, that uses the 2 Instances of the 2 boards
+        /// </summary>
+        public Player2():base() 
         {
-            this.board = BoardAi.Instance;
-            this.hitBoard = HitBoardAi.Instance;
+            this.board = BoardP2.Instance;
+            this.hitBoard = HitBoardP2.Instance;
         }
-        public void GenerateMap()
-        {
 
-        }
     }
 }

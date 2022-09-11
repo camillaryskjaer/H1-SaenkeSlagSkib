@@ -9,7 +9,6 @@ namespace H1_SænkeSlagSkib.Boards
 {
     internal class MaterialBoard:Board
     {
-        private List<Ship> ships = new List<Ship>();
         private Material[,] board;
 
         public Material[,] BoardArray
@@ -17,33 +16,26 @@ namespace H1_SænkeSlagSkib.Boards
             get { return board; }
             set { board = value; }
         }
-
+        /// <summary>
+        /// Constructor to instanciate Material board for ships, water ETC.
+        /// </summary>
         public MaterialBoard()
         {
             Water water = new Water();
             board = new Material[,]
             {
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-                {water},{water }, { water}, {water }, { water}, { water}, { water}, { water}, {water }, { water},
-
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water},
+                {water,water,water,water,water,water,water,water,water,water}
             };
-            AddShips();
         }
-        private void AddShips()
-        {
-            ships.Add(new Ship(Ship.ShipEnum.PatruljeBåd, 2));
-            ships.Add(new Ship(Ship.ShipEnum.PatruljeBåd, 2));
-            ships.Add(new Ship(Ship.ShipEnum.PatruljeBåd, 2));
-            ships.Add(new Ship(Ship.ShipEnum.PatruljeBåd, 2));
-        }
+
     }
 }

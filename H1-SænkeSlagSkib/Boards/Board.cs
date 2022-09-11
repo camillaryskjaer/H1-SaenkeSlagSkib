@@ -11,8 +11,6 @@ namespace H1_SænkeSlagSkib.Boards
     {
         public Board()
         {
-
-
         }
     }
 }

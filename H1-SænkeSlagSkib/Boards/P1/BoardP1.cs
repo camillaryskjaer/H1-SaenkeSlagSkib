@@ -8,19 +8,21 @@ using System.Threading.Tasks;
 
 namespace H1_SænkeSlagSkib.Boards.Player1
 {
-    internal sealed class BoardPlayer1 : MaterialBoard
+    internal sealed class BoardP1 : MaterialBoard
     {
-        private static BoardPlayer1? instance = null;
-        
-        private BoardPlayer1() : base()
+        private static BoardP1? instance = null;
+        /// <summary>
+        /// Singleton for board to Player1
+        /// </summary>
+        private BoardP1() : base()
         {
 
         }
-        public static BoardPlayer1 Instance
+        public static BoardP1 Instance
         {
             get
             {
-                instance ??= new BoardPlayer1();
+                instance ??= new BoardP1();
                 return instance;
             }
         }
