@@ -28,6 +28,7 @@ namespace H1_SænkeSlagSkib
             p2 = (Player2)players[1];
 
             //Generates map for both players
+            //Dette burde ligge i konstruktøren, hvad nu hvis andre ville bruge din kode og de glemmer at kalde denne metode?
             p1.GenerateMap(((BoardP1)p1.Board).BoardArray, p1.Ships);
             p2.GenerateMap(((BoardP2)p2.Board).BoardArray, p2.Ships);
 
