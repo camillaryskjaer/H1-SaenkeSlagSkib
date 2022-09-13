@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace H1_SænkeSlagSkib.Materials
 {
+
+//Det ser ikke ud til at du tilføre denne klasse nogen ny funktionalitet - ERGO skal du ikke bruge den!
     internal class Water:Material
     {
         /// <summary>
