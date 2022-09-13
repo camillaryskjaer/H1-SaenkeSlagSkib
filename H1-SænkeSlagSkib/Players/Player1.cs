@@ -6,8 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace H1_SænkeSlagSkib.Players
 {
+
+//Virkelig dårlig navngivning :)
     internal class Player1 : Player
     {
         private Board board;
