@@ -13,6 +13,8 @@ namespace H1_SænkeSlagSkib.Boards.Player1
         /// <summary>
         /// Singleton for Hitboard Player1
         /// </summary>
+        
+        //Hvorfor en tom konstruktør?
         private HitBoardP1() : base()
         {
         }
